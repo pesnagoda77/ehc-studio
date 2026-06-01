@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHC STUDIO — ElHombreCalvo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #333 0%, #555 50%, #333 100%);
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #d4af37;
+        }
+        
+        h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+            color: #f0f0f0;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #888;
+            max-width: 600px;
+            margin-bottom: 3rem;
+        }
+        
+        .cta {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border: 1px solid #d4af37;
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            transition: all 0.3s;
+        }
+        
+        .cta:hover {
+            background: #d4af37;
+            color: #0a0a0a;
+        }
+        
+        /* Projects */
+        .projects {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            margin-bottom: 3rem;
+            color: #d4af37;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: #111;
+            border: 1px solid #222;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+        
+        .project-card:hover {
+            border-color: #d4af37;
+            transform: translateY(-4px);
+        }
+        
+        .project-type {
+            font-size: 0.75rem;
+            color: #d4af37;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+        
+        .project-name {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #f0f0f0;
+        }
+        
+        .project-desc {
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        .project-status {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        .status-ready {
+            color: #4caf50;
+        }
+        
+        .status-wip {
+            color: #ff9800;
+        }
+        
+        /* Contact */
+        .contact {
+            padding: 4rem 2rem;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+        
+        .contact-text {
+            color: #888;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-link {
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 2rem;
+            text-align: center;
+            color: #444;
+            font-size: 0.8rem;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="logo">EHC</div>
+        <h1>EHC STUDIO</h1>
+        <p class="subtitle">Создаём цифровые продукты, которые работают за вас. Сайты и приложения для бизнеса.</p>
+        <a href="#projects" class="cta">СМОТРЕТЬ РАБОТЫ</a>
+    </section>
+    
+    <section class="projects" id="projects">
+        <h2 class="section-title">ПРОЕКТЫ</h2>
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-type">САЙТ</div>
+                <h3 class="project-name">AlbaTech</h3>
+                <p class="project-desc">Корпоративный сайт технологической компании</p>
+                <div class="project-status status-ready">✓ Готово</div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-type">ПРИЛОЖЕНИЕ</div>
+                <h3 class="project-name">DictaPro</h3>
+                <p class="project-desc">Диктофон с AI-транскрипцией и саммари</p>
+                <div class="project-status status-ready">✓ Android готово</div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-type">ПРИЛОЖЕНИЕ</div>
+                <h3 class="project-name">Advocate</h3>
+                <p class="project-desc">AI-помощник для адвокатов и юристов</p>
+                <div class="project-status status-wip">◐ В разработке</div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-type">САЙТ</div>
+                <h3 class="project-name">Premixes</h3>
+                <p class="project-desc">Платформа для музыкальных продюсеров</p>
+                <div class="project-status status-wip">◐ В разработке</div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-type">САЙТ</div>
+                <h3 class="project-name">RadioMedicina</h3>
+                <p class="project-desc">Медицинский информационный портал</p>
+                <div class="project-status status-wip">◐ В разработке</div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-type">ПРИЛОЖЕНИЕ</div>
+                <h3 class="project-name">Мастер CRM</h3>
+                <p class="project-desc">CRM-система для малого бизнеса</p>
+                <div class="project-status status-wip">◐ В разработке</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <p class="contact-text">Есть проект? Давайте обсудим.</p>
+        <a href="mailto:hello@ehc.studio" class="contact-link">hello@ehc.studio</a>
+    </section>
+    
+    <footer>
+        <p>© 2026 EHC STUDIO — ElHombreCalvo</p>
+    </footer>
+</body>
+</html>
