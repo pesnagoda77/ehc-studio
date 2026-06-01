@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHC Logo</title>
+    <style>
+        body {
+            background: #050505;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        .logo-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        
+        /* 7x7 grid of squares */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            width: 140px;
+            height: 140px;
+            gap: 2px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .grid-cell {
+            background: linear-gradient(135deg, #333 0%, #555 50%, #333 100%);
+            border-radius: 1px;
+        }
+        
+        /* Gradient variation for each cell */
+        .grid-cell:nth-child(1) { background: linear-gradient(135deg, #2a2a2a 0%, #444 100%); }
+        .grid-cell:nth-child(2) { background: linear-gradient(135deg, #333 0%, #555 100%); }
+        .grid-cell:nth-child(3) { background: linear-gradient(135deg, #3a3a3a 0%, #666 100%); }
+        .grid-cell:nth-child(4) { background: linear-gradient(135deg, #444 0%, #777 100%); }
+        .grid-cell:nth-child(5) { background: linear-gradient(135deg, #3a3a3a 0%, #666 100%); }
+        .grid-cell:nth-child(6) { background: linear-gradient(135deg, #333 0%, #555 100%); }
+        .grid-cell:nth-child(7) { background: linear-gradient(135deg, #2a2a2a 0%, #444 100%); }
+        .grid-cell:nth-child(8) { background: linear-gradient(135deg, #333 0%, #555 100%); }
+        .grid-cell:nth-child(9) { background: linear-gradient(135deg, #444 0%, #666 100%); }
+        .grid-cell:nth-child(10) { background: linear-gradient(135deg, #555 0%, #777 100%); }
+        .grid-cell:nth-child(11) { background: linear-gradient(135deg, #666 0%, #888 100%); }
+        .grid-cell:nth-child(12) { background: linear-gradient(135deg, #555 0%, #777 100%); }
+        .grid-cell:nth-child(13) { background: linear-gradient(135deg, #444 0%, #666 100%); }
+        .grid-cell:nth-child(14) { background: linear-gradient(135deg, #333 0%, #555 100%); }
+        
+        /* Center cells brighter */
+        .grid-cell:nth-child(15) { background: linear-gradient(135deg, #444 0%, #666 100%); }
+        .grid-cell:nth-child(16) { background: linear-gradient(135deg, #555 0%, #777 100%); }
+        .grid-cell:nth-child(17) { background: linear-gradient(135deg, #666 0%, #888 100%); }
+        .grid-cell:nth-child(18) { background: linear-gradient(135deg, #777 0%, #999 100%); }
+        .grid-cell:nth-child(19) { background: linear-gradient(135deg, #666 0%, #888 100%); }
+        .grid-cell:nth-child(20) { background: linear-gradient(135deg, #555 0%, #777 100%); }
+        .grid-cell:nth-child(21) { background: linear-gradient(135deg, #444 0%, #666 100%); }
+        .grid-cell:nth-child(22) { background: linear-gradient(135deg, #555 0%, #777 100%); }
+        .grid-cell:nth-child(23) { background: linear-gradient(135deg, #666 0%, #888 100%); }
+        .grid-cell:nth-child(24) { background: linear-gradient(135deg, #777 0%, #999 100%); }
+        .grid-cell:nth-child(25) { background: linear-gradient(135deg, #888 0%, #aaa 100%); }
+        .grid-cell:nth-child(26) { background: linear-gradient(135deg, #777 0%, #999 100%); }
+        .grid-cell:nth-child(27) { background: linear-gradient(135deg, #666 0%, #888 100%); }
+        .grid-cell:nth-child(28) { background: linear-gradient(135deg, #555 0%, #777 100%); }
+        .grid-cell:nth-child(29) { background: linear-gradient(135deg, #444 0%, #666 100%); }
+        .grid-cell:nth-child(30) { background: linear-gradient(135deg, #555 0%, #777 100%); }
+        .grid-cell:nth-child(31) { background: linear-gradient(135deg, #666 0%, #888 100%); }
+        .grid-cell:nth-child(32) { background: linear-gradient(135deg, #777 0%, #999 100%); }
+        .grid-cell:nth-child(33) { background: linear-gradient(135deg, #888 0%, #aaa 100%); }
+        .grid-cell:nth-child(34) { background: linear-gradient(135deg, #777 0%, #999 100%); }
+        .grid-cell:nth-child(35) { background: linear-gradient(135deg, #666 0%, #888 100%); }
+        .grid-cell:nth-child(36) { background: linear-gradient(135deg, #555 0%, #777 100%); }
+        .grid-cell:nth-child(37) { background: linear-gradient(135deg, #444 0%, #666 100%); }
+        .grid-cell:nth-child(38) { background: linear-gradient(135deg, #555 0%, #777 100%); }
+        .grid-cell:nth-child(39) { background: linear-gradient(135deg, #666 0%, #888 100%); }
+        .grid-cell:nth-child(40) { background: linear-gradient(135deg, #777 0%, #999 100%); }
+        .grid-cell:nth-child(41) { background: linear-gradient(135deg, #888 0%, #aaa 100%); }
+        .grid-cell:nth-child(42) { background: linear-gradient(135deg, #777 0%, #999 100%); }
+        .grid-cell:nth-child(43) { background: linear-gradient(135deg, #666 0%, #888 100%); }
+        .grid-cell:nth-child(44) { background: linear-gradient(135deg, #555 0%, #777 100%); }
+        .grid-cell:nth-child(45) { background: linear-gradient(135deg, #444 0%, #666 100%); }
+        .grid-cell:nth-child(46) { background: linear-gradient(135deg, #555 0%, #777 100%); }
+        .grid-cell:nth-child(47) { background: linear-gradient(135deg, #666 0%, #888 100%); }
+        .grid-cell:nth-child(48) { background: linear-gradient(135deg, #777 0%, #999 100%); }
+        .grid-cell:nth-child(49) { background: linear-gradient(135deg, #888 0%, #aaa 100%); }
+        
+        /* Text */
+        .logo-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            background: linear-gradient(135deg, #d4af37 0%, #f0d878 50%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: none;
+            z-index: 10;
+        }
+        
+        /* 7-pointed stars */
+        .star {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            z-index: 5;
+        }
+        
+        .star::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #d4af37 0%, #f0d878 50%, #d4af37 100%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            transform: translate(-50%, -50%);
+        }
+        
+        .star-left {
+            top: 50%;
+            left: -15px;
+            transform: translateY(-50%);
+        }
+        
+        .star-right {
+            top: 50%;
+            right: -15px;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="grid">
+            <!-- 49 cells for 7x7 grid -->
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+        </div>
+        <div class="logo-text">EHC</div>
+        <div class="star star-left"></div>
+        <div class="star star-right"></div>
+    </div>
+</body>
+</html>

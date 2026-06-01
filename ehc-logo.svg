@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#050505"/>
+  
+  <!-- 7x7 Grid -->
+  <g id="grid">
+    <!-- Row 1 -->
+    <rect x="85" y="85" width="30" height="30" fill="#2a2a2a"/>
+    <rect x="117" y="85" width="30" height="30" fill="#333"/>
+    <rect x="149" y="85" width="30" height="30" fill="#3a3a3a"/>
+    <rect x="181" y="85" width="30" height="30" fill="#444"/>
+    <rect x="213" y="85" width="30" height="30" fill="#3a3a3a"/>
+    <rect x="245" y="85" width="30" height="30" fill="#333"/>
+    <rect x="277" y="85" width="30" height="30" fill="#2a2a2a"/>
+    
+    <!-- Row 2 -->
+    <rect x="85" y="117" width="30" height="30" fill="#333"/>
+    <rect x="117" y="117" width="30" height="30" fill="#444"/>
+    <rect x="149" y="117" width="30" height="30" fill="#555"/>
+    <rect x="181" y="117" width="30" height="30" fill="#666"/>
+    <rect x="213" y="117" width="30" height="30" fill="#555"/>
+    <rect x="245" y="117" width="30" height="30" fill="#444"/>
+    <rect x="277" y="117" width="30" height="30" fill="#333"/>
+    
+    <!-- Row 3 -->
+    <rect x="85" y="149" width="30" height="30" fill="#3a3a3a"/>
+    <rect x="117" y="149" width="30" height="30" fill="#555"/>
+    <rect x="149" y="149" width="30" height="30" fill="#666"/>
+    <rect x="181" y="149" width="30" height="30" fill="#777"/>
+    <rect x="213" y="149" width="30" height="30" fill="#666"/>
+    <rect x="245" y="149" width="30" height="30" fill="#555"/>
+    <rect x="277" y="149" width="30" height="30" fill="#3a3a3a"/>
+    
+    <!-- Row 4 (center - brightest) -->
+    <rect x="85" y="181" width="30" height="30" fill="#444"/>
+    <rect x="117" y="181" width="30" height="30" fill="#666"/>
+    <rect x="149" y="181" width="30" height="30" fill="#888"/>
+    <rect x="181" y="181" width="30" height="30" fill="#aaa"/>
+    <rect x="213" y="181" width="30" height="30" fill="#888"/>
+    <rect x="245" y="181" width="30" height="30" fill="#666"/>
+    <rect x="277" y="181" width="30" height="30" fill="#444"/>
+    
+    <!-- Row 5 -->
+    <rect x="85" y="213" width="30" height="30" fill="#3a3a3a"/>
+    <rect x="117" y="213" width="30" height="30" fill="#555"/>
+    <rect x="149" y="213" width="30" height="30" fill="#666"/>
+    <rect x="181" y="213" width="30" height="30" fill="#777"/>
+    <rect x="213" y="213" width="30" height="30" fill="#666"/>
+    <rect x="245" y="213" width="30" height="30" fill="#555"/>
+    <rect x="277" y="213" width="30" height="30" fill="#3a3a3a"/>
+    
+    <!-- Row 6 -->
+    <rect x="85" y="245" width="30" height="30" fill="#333"/>
+    <rect x="117" y="245" width="30" height="30" fill="#444"/>
+    <rect x="149" y="245" width="30" height="30" fill="#555"/>
+    <rect x="181" y="245" width="30" height="30" fill="#666"/>
+    <rect x="213" y="245" width="30" height="30" fill="#555"/>
+    <rect x="245" y="245" width="30" height="30" fill="#444"/>
+    <rect x="277" y="245" width="30" height="30" fill="#333"/>
+    
+    <!-- Row 7 -->
+    <rect x="85" y="277" width="30" height="30" fill="#2a2a2a"/>
+    <rect x="117" y="277" width="30" height="30" fill="#333"/>
+    <rect x="149" y="277" width="30" height="30" fill="#3a3a3a"/>
+    <rect x="181" y="277" width="30" height="30" fill="#444"/>
+    <rect x="213" y="277" width="30" height="30" fill="#3a3a3a"/>
+    <rect x="245" y="277" width="30" height="30" fill="#333"/>
+    <rect x="277" y="277" width="30" height="30" fill="#2a2a2a"/>
+  </g>
+  
+  <!-- Text EHC -->
+  <text x="200" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#d4af37" letter-spacing="3">EHC</text>
+  
+  <!-- 7-pointed stars -->
+  <g id="star-left" transform="translate(40, 200)">
+    <polygon points="0,-15 4,-5 14,-5 6,2 9,12 0,6 -9,12 -6,2 -14,-5 -4,-5" fill="#d4af37"/>
+  </g>
+  
+  <g id="star-right" transform="translate(360, 200)">
+    <polygon points="0,-15 4,-5 14,-5 6,2 9,12 0,6 -9,12 -6,2 -14,-5 -4,-5" fill="#d4af37"/>
+  </g>
+</svg>
