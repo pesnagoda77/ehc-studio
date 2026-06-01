@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
   <!-- Background -->
-  <rect width="400" height="400" fill="#050505"/>
+  <rect width="400" height="500" fill="#050505"/>
   
   <!-- 7x7 Grid -->
   <g id="grid">
@@ -68,15 +68,18 @@
     <rect x="277" y="277" width="30" height="30" fill="#2a2a2a"/>
   </g>
   
-  <!-- Text EHC -->
-  <text x="200" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#d4af37" letter-spacing="3">EHC</text>
-  
   <!-- 7-pointed stars -->
   <g id="star-left" transform="translate(40, 200)">
-    <polygon points="0,-15 4,-5 14,-5 6,2 9,12 0,6 -9,12 -6,2 -14,-5 -4,-5" fill="#d4af37"/>
+    <polygon points="0,-18 5.5,-7.5 17,-5.5 8.5,2.5 11,14 0,8.5 -11,14 -8.5,2.5 -17,-5.5 -5.5,-7.5" fill="#d4af37"/>
   </g>
   
   <g id="star-right" transform="translate(360, 200)">
-    <polygon points="0,-15 4,-5 14,-5 6,2 9,12 0,6 -9,12 -6,2 -14,-5 -4,-5" fill="#d4af37"/>
+    <polygon points="0,-18 5.5,-7.5 17,-5.5 8.5,2.5 11,14 0,8.5 -11,14 -8.5,2.5 -17,-5.5 -5.5,-7.5" fill="#d4af37"/>
   </g>
+  
+  <!-- Text EHC below the grid -->
+  <text x="200" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#d4af37" letter-spacing="4">EHC</text>
+  
+  <!-- Subtitle -->
+  <text x="200" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#888" letter-spacing="2">STUDIO</text>
 </svg>
